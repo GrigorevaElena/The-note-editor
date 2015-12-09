@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_window_brown_bg">#AB4410</color>
+    <color name="main_window_green_bg">#009955</color>
+    <color name="main_window_yellow_bg">#F6BA07</color>
+    <color name="text_color">@android:color/white</color>
+</resources>
