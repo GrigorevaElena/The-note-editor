@@ -1,28 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:padding="10dp"
-    android:background="@color/main_window_green_bg">
+    android:layout_height="50.5dp">
 
-    <TextView
-        android:layout_width="50dp"
-        android:layout_height="30dp"
-        android:padding="5dp"
-        android:layout_weight="1"
-        android:id="@+id/textNote" />
-
-    <ImageButton
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:id="@+id/changeNote"
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/content_container"
         />
 
-    <ImageButton
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:id="@+id/deleteNote"
+    <LinearLayout
+        android:id="@+id/content_container"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@color/main_window_green_bg">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:id="@+id/text_note" />
+
+        <Button
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:id="@+id/change_note"
+            android:text="/"
+            android:textSize="12sp"
+            android:textColor="@color/main_window_brown_bg"/>
         />
 
-</LinearLayout>
+        <Button
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:id="@+id/delete_note"
+            android:text="X"
+            android:textSize="12sp"
+            android:textColor="@android:color/holo_red_light"/>
+    </LinearLayout>
+
+</RelativeLayout>
